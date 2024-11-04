@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cơ sở dữ liệu
+*.sqlite3
+
+# Thư mục môi trường ảo
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Thư mục cài đặt Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.bak
+
+# Tệp môi trường
+.env
+*.env
+
+# Thư mục tạm thời, cache
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Tệp cấu hình của IDE
+.idea/
+.vscode/
+*.swp
+
+# Các tệp tạm thời
+*.tmp
+*.temp
+
+# Tệp nhạy cảm
+secret_key.txt

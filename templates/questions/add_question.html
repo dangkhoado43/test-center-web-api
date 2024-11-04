@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Add Question Page
+{% endblock title %}
+
+{% block content %}
+    <h1 class="text-center mt-3 mb-3">Add Question</h1>
+    <div class="container">
+        <form method="post" class="jumbotron">
+            {% csrf_token %}
+            {{form|crispy}}
+            <input type="submit" value="Add Todo" class="btn btn-success">
+        </form>
+    </div>
+{% endblock content %}

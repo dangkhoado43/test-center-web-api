@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Questions</h1>
+<div class="row">
+{% for question in questions %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            {% if question.image %}
+                <img class="card-img-top" src="{{ question.image.url }}">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ question.title }}</h5>
+                <p class="card-text">{{ question.description }}</p>
+                <a href="{% url 'question_detail' question.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
